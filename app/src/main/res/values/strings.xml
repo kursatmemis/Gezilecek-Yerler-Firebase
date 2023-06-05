@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gezilecek-Yerler</string>
+    <string name="login_button_text">Giriş Yap</string>
+    <string name="password_hint_text">Şifre</string>
+    <string name="email_hint_text">Email</string>
+    <string name="hesabiniz_yok_mu">Hesabınız yok mu?</string>
+    <string name="kayit_ol">Kayıt ol</string>
+    <string name="loginimage">loginImage</string>
+</resources>

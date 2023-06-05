@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748066296574",
+    "project_id": "gezilecek-yerler-b2f64",
+    "storage_bucket": "gezilecek-yerler-b2f64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748066296574:android:8e01f1fb6df96beca84baf",
+        "android_client_info": {
+          "package_name": "com.kursatmemis.gezilecek_yerler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748066296574-3d8947t56a5bmr0jius0m6ttu9rbvh2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6mrh_EaFwYMj4WarIxHzrkwAQNz5pDDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748066296574-3d8947t56a5bmr0jius0m6ttu9rbvh2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
