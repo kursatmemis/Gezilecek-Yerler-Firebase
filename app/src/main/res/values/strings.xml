@@ -55,4 +55,10 @@
     <string name="form_dialog_city_text">Şehir yazınız...</string>
     <string name="form_dialog_note_text">Not yazınız...</string>
     <string name="form_dialog_button_text">Kaydet</string>
+    <string name="fake_title">Title</string>
+    <string name="city">Şehir: </string>
+    <string name="note">Not: </string>
+    <string name="reset_password_text">Şifremi unuttum</string>
+    <string name="email_adresinizi_giriniz">Email adresinizi giriniz</string>
+    <string name="sifirlama_baglantisi_gönder">Sıfırlama bağlantısı gönder</string>
 </resources>

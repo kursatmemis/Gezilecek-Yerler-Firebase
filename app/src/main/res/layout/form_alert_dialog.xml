@@ -13,7 +13,7 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
-        android:textColorHint="@color/light_gray"
+        android:textColorHint="@color/edit_text_hint_color"
         android:textColor="@color/white"
         android:ems="10"
         android:hint="@string/form_dialog_title_text"
@@ -32,7 +32,7 @@
         android:layout_marginEnd="36dp"
         android:ems="10"
         android:textColor="@color/white"
-        android:textColorHint="@color/light_gray"
+        android:textColorHint="@color/edit_text_hint_color"
         android:hint="@string/form_dialog_city_text"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +48,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
         android:ems="10"
-        android:textColorHint="@color/light_gray"
+        android:textColorHint="@color/edit_text_hint_color"
         android:textColor="@color/white"
         android:hint="@string/form_dialog_note_text"
         android:inputType="text"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cityEditText" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/saveInfosButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
