@@ -13,7 +13,16 @@
         android:theme="@style/Theme.GezilecekYerler"
         tools:targetApi="31">
         <activity
-            android:name="com.kursatmemis.gezilecek_yerler.MainActivity"
+            android:name="com.kursatmemis.gezilecek_yerler.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kursatmemis.gezilecek_yerler.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kursatmemis.gezilecek_yerler.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

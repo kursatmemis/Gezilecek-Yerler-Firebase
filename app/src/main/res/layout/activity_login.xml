@@ -5,21 +5,21 @@
     android:id="@+id/root_component"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kursatmemis.gezilecek_yerler.MainActivity"
-    android:background="@color/matte_black">
+    android:background="@color/background_color"
+    tools:context="com.kursatmemis.gezilecek_yerler.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginTop="60dp"
+        android:contentDescription="@string/loginimage"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_img"
-        android:contentDescription="@string/loginimage" />
+        app:srcCompat="@drawable/login_img" />
 
     <EditText
         android:id="@+id/emailEditText"
@@ -28,16 +28,17 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="36dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/email_hint_text"
         android:inputType="text"
-        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:ignore="TextFields"
-        android:autofillHints="" />
+        tools:ignore="TextFields" />
 
     <EditText
         android:id="@+id/passwordEditText"
@@ -46,15 +47,16 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="36dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/password_hint_text"
         android:inputType="textPassword"
-        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/light_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
 
     <Button
         android:id="@+id/loginButton"
@@ -68,40 +70,53 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton">
+        app:layout_constraintTop_toBottomOf="@+id/progressBar">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hesabiniz_yok_mu"
+            android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/goToRegisterActivityTextView"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textColor="@color/white"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/goToRegisterActivityTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="5dp"
             android:text="@string/kayit_ol"
+            android:textColor="@color/blue"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/textView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toTopOf="@+id/textView"
-            android:textColor="@color/blue"/>
+            app:layout_constraintTop_toTopOf="@+id/textView" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
