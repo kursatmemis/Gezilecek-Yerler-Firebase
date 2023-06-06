@@ -51,4 +51,8 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="form_dialog_title_text">Başlık yazınız...</string>
+    <string name="form_dialog_city_text">Şehir yazınız...</string>
+    <string name="form_dialog_note_text">Not yazınız...</string>
+    <string name="form_dialog_button_text">Kaydet</string>
 </resources>

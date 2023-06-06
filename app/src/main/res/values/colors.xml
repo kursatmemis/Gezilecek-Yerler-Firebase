@@ -5,4 +5,5 @@
     <color name="background_color">#28282B</color>
     <color name="blue">#005A88</color>
     <color name="light_gray">#a9a9a9</color>
+    <color name="fab_color">#f14666</color>
 </resources>
