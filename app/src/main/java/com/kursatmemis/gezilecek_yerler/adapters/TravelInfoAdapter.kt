@@ -7,10 +7,10 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.example.gezilecek_yerler.R
-import com.kursatmemis.gezilecek_yerler.models.Info
+import com.kursatmemis.gezilecek_yerler.models.TravelInfo
 
-class InfoAdapter(context: Context, val infos: List<Info>) :
-    ArrayAdapter<Info>(context, R.layout.list_view_item, infos) {
+class TravelInfoAdapter(context: Context, val travelInfos: List<TravelInfo>) :
+    ArrayAdapter<TravelInfo>(context, R.layout.list_view_item, travelInfos) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val layoutInflater = LayoutInflater.from(context)
         val viewHolder: ViewHolder
@@ -28,10 +28,10 @@ class InfoAdapter(context: Context, val infos: List<Info>) :
             viewHolder = convertView.tag as ViewHolder
         }
 
-        val info = infos[position]
-        viewHolder.titleTextView.text = info.title
-        viewHolder.cityTextView.text = info.city
-        viewHolder.noteTextView.text = info.note
+        val travelInfo = travelInfos[position]
+        viewHolder.titleTextView.text = travelInfo.title
+        viewHolder.cityTextView.text = travelInfo.city
+        viewHolder.noteTextView.text = travelInfo.note
 
         return listViewItem!!
     }

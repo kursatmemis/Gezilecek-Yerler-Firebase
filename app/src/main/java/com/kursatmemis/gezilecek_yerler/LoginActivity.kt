@@ -23,7 +23,7 @@ import com.google.firebase.ktx.Firebase
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var goToRegisterActivityTextView: TextView
-    private lateinit var resetPasswordTextView: TextView
+    private lateinit var goToResetPasswordActivityTextView: TextView
     private lateinit var loginButton: Button
     private lateinit var emailEditText: EditText
     private lateinit var passwordEditText: EditText
@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        resetPasswordTextView.setOnClickListener {
+        goToResetPasswordActivityTextView.setOnClickListener {
             val intent = Intent(this@LoginActivity, ResetPasswordActivity::class.java)
             startActivity(intent)
         }
@@ -122,7 +122,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun bindViews() {
         goToRegisterActivityTextView = findViewById(R.id.goToRegisterActivityTextView)
-        resetPasswordTextView = findViewById(R.id.resetPasswordTextView)
+        goToResetPasswordActivityTextView = findViewById(R.id.goToResetPasswordActivityTextView)
         loginButton = findViewById(R.id.loginButton)
         emailEditText = findViewById(R.id.emailEditText)
         passwordEditText = findViewById(R.id.passwordEditText)

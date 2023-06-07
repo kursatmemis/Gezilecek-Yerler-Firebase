@@ -2,10 +2,9 @@ package com.kursatmemis.gezilecek_yerler
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
+import android.widget.ImageView
 import android.widget.Toast
 import com.example.gezilecek_yerler.R
 import com.google.firebase.auth.ktx.auth
@@ -15,7 +14,7 @@ class ResetPasswordActivity : AppCompatActivity() {
 
     private lateinit var resetPasswordButton: Button
     private lateinit var resetEmailEditText: EditText
-    private lateinit var goLoginActivityButton: Button
+    private lateinit var goBackImageView: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +27,7 @@ class ResetPasswordActivity : AppCompatActivity() {
             sendResetEmail(email)
         }
 
-        goLoginActivityButton.setOnClickListener {
+        goBackImageView.setOnClickListener {
             finish()
         }
     }
@@ -50,10 +49,10 @@ class ResetPasswordActivity : AppCompatActivity() {
                         } else {
                             Firebase.auth.sendPasswordResetEmail(email)
                                 .addOnCompleteListener { resetTask ->
-                                    if (resetTask.isSuccessful) {
-                                        message = "E-posta gönderildi."
+                                    message = if (resetTask.isSuccessful) {
+                                        "E-posta gönderildi."
                                     } else {
-                                        message = "E-posta gönderilemedi.."
+                                        "E-posta gönderilemedi."
                                     }
                                     showToastMessage(message)
                                 }
@@ -73,6 +72,6 @@ class ResetPasswordActivity : AppCompatActivity() {
     private fun bindViews() {
         resetPasswordButton = findViewById(R.id.resetPasswordButton)
         resetEmailEditText = findViewById(R.id.resetEmailEditText)
-        goLoginActivityButton = findViewById(R.id.goLoginActivityButton)
+        goBackImageView = findViewById(R.id.goBackImageView)
     }
 }

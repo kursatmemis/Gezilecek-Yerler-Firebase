@@ -9,12 +9,11 @@
     tools:context="com.kursatmemis.gezilecek_yerler.LoginActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/loginImageImageView"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_marginTop="30dp"
         android:contentDescription="@string/loginimage"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,12 +32,12 @@
         android:hint="@string/email_hint_text"
         android:inputType="text"
         android:textColor="@color/black"
-        android:textColorHint="@color/edit_text_hint_color"
+        android:textColorHint="@color/text_and_hint_color"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/loginImageImageView"
         tools:ignore="TextFields" />
 
     <EditText
@@ -53,7 +52,7 @@
         android:hint="@string/password_hint_text"
         android:inputType="textPassword"
         android:textColor="@color/black"
-        android:textColorHint="@color/edit_text_hint_color"
+        android:textColorHint="@color/text_and_hint_color"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -79,7 +78,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resetPasswordTextView">
+        app:layout_constraintTop_toBottomOf="@+id/goToResetPasswordActivityTextView">
 
         <Button
             android:id="@+id/loginButton"
@@ -108,7 +107,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hesabiniz_yok_mu"
-                android:textColor="@color/edit_text_hint_color"
+                android:textColor="@color/text_and_hint_color"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toStartOf="@+id/goToRegisterActivityTextView"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -121,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:text="@string/kayit_ol"
-                android:textColor="#679289"
+                android:textColor="@color/clickable_text_color"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/textView"
@@ -132,12 +131,12 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/resetPasswordTextView"
+        android:id="@+id/goToResetPasswordActivityTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/reset_password_text"
-        android:textColor="#679289"
+        android:textColor="@color/clickable_text_color"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

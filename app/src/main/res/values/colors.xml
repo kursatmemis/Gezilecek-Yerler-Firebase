@@ -2,9 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_color">#ebd4d4</color>
-    <color name="blue">#005A88</color>
-    <color name="edit_text_hint_color">#3F51B5</color>
-    <color name="fab_color">#f14666</color>
-    <color name="info_title_color">#FFC872</color>
+    <color name="orange">#FF0000</color>
+    <color name="background_color">#d7c4ff</color>
+    <color name="text_and_hint_color">#333333</color>
+    <color name="clickable_text_color">#6136b5</color>
 </resources>
