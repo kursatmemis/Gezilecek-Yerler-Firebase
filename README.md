@@ -14,7 +14,7 @@ Uygulama, kullanıcının hatalı e-posta veya şifre girişi gibi durumlarda To
 
 | Giriş Ekranı | Giriş Ekranı | Profil Ekranı | Profil Ekranı |
 | --- | --- | --- | --- |
-| ![Giriş Ekranı 1](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_1.jpg) | ![Giriş Ekranı 2](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_2.jpg) | ![Profil Ekranı 1](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_6.jpg) | ![Profil Ekranı 2](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_7.jpg) |
+| ![Giriş Ekranı 1](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_1.jpg) | ![Giriş Ekranı 2](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_2.jpg) | ![Profil Ekranı 1](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_7.jpg) | ![Profil Ekranı 2](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_6.jpg) |
 | Kayıt Ekranı | Şifre Sıfırlama Ekranı | Şifre Sıfırlama Ekranı | |
 | ![Kayıt Ekranı](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_5.jpg) | ![Şifre Sıfırlama Ekranı 1](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_3.jpg) | ![Şifre Sıfırlama Ekranı 2](https://raw.githubusercontent.com/kursatmemis/Gezilecek-Yerler-Firebase/main/images/img_4.jpg) | |
 
